@@ -1,3 +1,13 @@
+export default {
+  async fetch(req, env) {
+    console.log("收到请求:", req);
+    
+    const response = await fetch(req);
+    console.log("返回响应:", response);
+    
+    return response;
+  }
+}
 
 // 部署完成后在网址后面加上这个，获取订阅器默认节点，/auto
 
